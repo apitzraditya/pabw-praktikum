@@ -1,0 +1,148 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f4f7fb;
+  color: #20242b;
+}
+
+header {
+  background: #182848;
+  color: white;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+header h1 { margin: 0 0 8px; }
+header p { margin: 0; opacity: .9; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 14px 20px;
+  background: white;
+  border-bottom: 1px solid #dce2ea;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #182848;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+nav a:hover, nav a:focus {
+  background: #e8eef8;
+}
+
+main {
+  width: min(100% - 32px, 1000px);
+  margin: 32px auto;
+}
+
+section {
+  background: white;
+  margin-bottom: 24px;
+  padding: 26px;
+  border: 1px solid #dfe5ed;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(20, 35, 60, .06);
+}
+
+h2 {
+  margin-top: 0;
+  color: #182848;
+}
+
+figure { margin: 0 0 28px; text-align: center; }
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: auto;
+  border-radius: 12px;
+  border: 1px solid #d7dee8;
+}
+figcaption { margin-top: 8px; color: #657084; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e1e6ed;
+}
+
+thead th {
+  background: #182848;
+  color: white;
+}
+
+tbody tr:nth-child(even) { background: #f7f9fc; }
+
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 650px;
+}
+
+form div { display: grid; gap: 6px; }
+
+label { font-weight: 700; }
+
+input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #bfc8d5;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #8aa7d6;
+  border-color: #5f7fb5;
+}
+
+button {
+  width: fit-content;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #182848;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover { background: #253b68; }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #657084;
+}
+
+@media (max-width: 700px) {
+  section { padding: 18px; }
+  th, td { padding: 9px 8px; font-size: 14px; }
+  table { display: block; overflow-x: auto; }
+}

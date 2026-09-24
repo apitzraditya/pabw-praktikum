@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Favorit Saya</title>
+  <link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+  <header>
+    <h1>Game Favorit Saya</h1>
+    <p>Daftar game favorit saya beserta tahun rilis, genre, platform, dan rating.</p>
+  </header>
+
+  <nav aria-label="Navigasi utama">
+    <a href="#daftar-game">Daftar Game</a>
+    <a href="#tambah-game">Tambah Game</a>
+    <a href="#tentang-saya">Tentang Saya</a>
+  </nav>
+
+  <main>
+    <section id="daftar-game">
+      <h2>Daftar Game</h2>
+
+      <figure>
+        <img src="valorant.png" alt="Ilustrasi game VALORANT" width="800" height="450" loading="lazy">
+        <figcaption>VALORANT - salah satu game favorit saya.</figcaption>
+      </figure>
+
+      <table>
+        <caption>Daftar game favorit</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul Game</th>
+            <th scope="col">Tahun</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Minecraft</th>
+            <td>2011</td>
+            <td>Sandbox</td>
+            <td>PC</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <th scope="row">Grand Theft Auto V</th>
+            <td>2013</td>
+            <td>Aksi</td>
+            <td>PC</td>
+            <td>9.5/10</td>
+          </tr>
+          <tr>
+            <th scope="row">EA Sports FC 24</th>
+            <td>2023</td>
+            <td>Olahraga</td>
+            <td>PC</td>
+            <td>8.5/10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tambah-game">
+      <h2>Tambah Game</h2>
+      <form>
+        <div>
+          <label for="judul">Judul Game</label>
+          <input type="text" id="judul" name="judul" required>
+        </div>
+
+        <div>
+          <label for="tahun">Tahun Rilis</label>
+          <input type="number" id="tahun" name="tahun" min="1970" max="2100" required>
+        </div>
+
+        <div>
+          <label for="genre">Genre</label>
+          <input type="text" id="genre" name="genre" required>
+        </div>
+
+        <div>
+          <label for="platform">Platform</label>
+          <input type="text" id="platform" name="platform" required>
+        </div>
+
+        <div>
+          <label for="rating">Rating</label>
+          <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" required>
+        </div>
+
+        <button type="submit">Tambah Game</button>
+      </form>
+    </section>
+
+    <section id="tentang-saya">
+      <h2>Tentang Saya</h2>
+      <p>Halaman ini berisi daftar game yang saya sukai.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Game Favorit Saya</p>
+  </footer>
+</body>
+</html>
