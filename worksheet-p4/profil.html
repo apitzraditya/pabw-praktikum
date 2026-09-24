@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Favorit Saya</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+  <header>
+    <div class="header-baris">
+      <div>
+        <h1>Game Favorit Saya</h1>
+        <p>Daftar game favorit saya beserta tahun rilis, genre, platform, dan rating.</p>
+      </div>
+      <div class="tema-kontrol">
+        <input type="checkbox" id="tema" class="pengalih-tema">
+        <label for="tema" class="tombol-tema">Tema gelap</label>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Navigasi utama">
+    <ul>
+      <li><a href="#daftar-game">Daftar Game</a></li>
+      <li><a href="#tambah-game">Tambah Game</a></li>
+      <li><a href="#tentang-saya">Tentang Saya</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="daftar-game">
+      <h2>Daftar Game</h2>
+
+      <figure>
+        <img src="valorant.png" alt="Ilustrasi game VALORANT" width="800" height="450" loading="lazy">
+        <figcaption>VALORANT - salah satu game favorit saya.</figcaption>
+      </figure>
+
+      <div class="katalog" aria-label="Katalog game favorit">
+        <article class="kartu">
+          <h3>VALORANT</h3>
+          <p>2020 · Tactical FPS · PC</p>
+          <p><strong>Rating:</strong> 9.5/10</p>
+        </article>
+        <article class="kartu">
+          <h3>Minecraft</h3>
+          <p>2011 · Sandbox · PC</p>
+          <p><strong>Rating:</strong> 9/10</p>
+        </article>
+        <article class="kartu">
+          <h3>Grand Theft Auto V</h3>
+          <p>2013 · Aksi · PC</p>
+          <p><strong>Rating:</strong> 9.5/10</p>
+        </article>
+      </div>
+
+      <table>
+        <caption>Daftar game favorit</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul Game</th>
+            <th scope="col">Tahun</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">VALORANT</th>
+            <td>2020</td>
+            <td>Tactical FPS</td>
+            <td>PC</td>
+            <td>9.5/10</td>
+          </tr>
+          <tr>
+            <th scope="row">Minecraft</th>
+            <td>2011</td>
+            <td>Sandbox</td>
+            <td>PC</td>
+            <td>9/10</td>
+          </tr>
+          <tr>
+            <th scope="row">Grand Theft Auto V</th>
+            <td>2013</td>
+            <td>Aksi</td>
+            <td>PC</td>
+            <td>9.5/10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tambah-game">
+      <h2>Tambah Game</h2>
+      <form action="/simpan" method="post">
+        <div class="form-kolom">
+          <label for="judul">Judul Game</label>
+          <input type="text" id="judul" name="judul" required>
+          <p class="pesan-galat" aria-live="polite">Judul game wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="tahun">Tahun Rilis</label>
+          <input type="number" id="tahun" name="tahun" min="1970" max="2100" required>
+          <p class="pesan-galat" aria-live="polite">Masukkan tahun rilis 1970-2100.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="genre">Genre</label>
+          <input type="text" id="genre" name="genre" required>
+          <p class="pesan-galat" aria-live="polite">Genre wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="platform">Platform</label>
+          <input type="text" id="platform" name="platform" required>
+          <p class="pesan-galat" aria-live="polite">Platform wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="rating">Rating</label>
+          <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" required>
+          <p class="pesan-galat" aria-live="polite">Rating harus 0-10.</p>
+        </div>
+
+        <button type="submit">Tambah Game</button>
+      </form>
+    </section>
+
+    <section id="tentang-saya">
+      <h2>Tentang Saya</h2>
+      <p>Halaman ini berisi daftar game yang saya sukai, dengan VALORANT sebagai salah satu game favorit.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Game Favorit Saya</p>
+  </footer>
+</body>
+</html>

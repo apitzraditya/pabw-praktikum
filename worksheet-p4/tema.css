@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--gray-950);
+    --color-fg: var(--gray-50);
+    --color-surface: var(--gray-800);
+    --color-border: var(--gray-600);
+    --color-primary: var(--red-700);
+    --color-danger: var(--danger-300);
+    --color-focus: var(--red-700);
+    --shadow-1: 0 1px 3px rgba(0,0,0,.45);
+  }
+}
+
+/* Pilihan manual berada setelah media query agar menang saat keduanya aktif. */
+:root:has(#tema:checked) {
+  --color-bg: var(--gray-950);
+  --color-fg: var(--gray-50);
+  --color-surface: var(--gray-800);
+  --color-border: var(--gray-600);
+  --color-primary: var(--red-700);
+  --color-danger: var(--danger-300);
+  --color-focus: var(--red-700);
+  --shadow-1: 0 1px 3px rgba(0,0,0,.45);
+}
